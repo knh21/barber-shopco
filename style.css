@@ -24,7 +24,7 @@ body{
 }
 
 #mainNavbar .nav-link {
-    color:  #252525
+    color:  #252525;
 }
 
 #mainNavbar .nav-link:hover {
@@ -43,4 +43,18 @@ body{
 
 .navbar.scrolled {
     background: #E8E6D3 ;
+}
+
+#mainNavbar button.navbar-toggler span.navbar-toggler-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(75deg) brightness(110%) contrast(105%);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    #mainNavbar .nav-link {
+        background-color:#E8E6D3
+    }
+    
 }
