@@ -3,6 +3,7 @@ body{
     font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 70px; /* adjust as needed */
 }
 
 .blurb h2{
@@ -23,6 +24,8 @@ body{
     color:  #A16A46 ;
 }
 
+
+
 #mainNavbar .nav-link {
     color:  #252525;
 }
@@ -39,10 +42,12 @@ body{
 
 .content{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .navbar.scrolled {
-    background: #E8E6D3 ;
+    background: #E8E6D3;
+    transition: background 500ms;
 }
 
 #mainNavbar button.navbar-toggler span.navbar-toggler-icon {
@@ -58,3 +63,21 @@ body{
     }
     
 }
+
+
+@media (max-width: 767px) {
+    /* adjust the background color and height as needed */
+    #mainNavbar {
+      background-color: #E8E6D3;
+      height: 60px;
+    }
+    /* add a transparent background to the nav links */
+    #navLinks {
+      background-color: transparent !important;
+    }
+    /* add a border to the bottom of the navbar to separate it from the content */
+    #mainNavbar.navbar-scrolled {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  
